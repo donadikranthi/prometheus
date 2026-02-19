@@ -30,12 +30,12 @@ scrape_configs:
         labels:
           app: "prometheus"
 
-  - job_name: "node-1"
-    static_configs:
-      - targets: ["3.89.127.38:9100"]
-        labels:
-          app: "node-1"
-          name: "node-1"    
+  # - job_name: "node-1"
+  #   static_configs:
+  #     - targets: ["34.202.229.57:9100"]
+  #       labels:
+  #         app: "node-1"
+  #         name: "node-1"    
 
   - job_name: ec2_sd
     ec2_sd_configs:
