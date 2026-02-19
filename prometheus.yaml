@@ -8,7 +8,7 @@ alerting:
   alertmanagers:
     - static_configs:
         - targets:
-          - alertmanager:9093
+          - localhost:9093
 
 # Load rules once and periodically evaluate them according to the global 'evaluation_interval'.
 rule_files:
@@ -32,7 +32,7 @@ scrape_configs:
 
   # - job_name: "node-1"
   #   static_configs:
-  #     - targets: ["34.202.229.57:9100"]
+  #     - targets: ["54.234.167.254:9100"]
   #       labels:
   #         app: "node-1"
   #         name: "node-1"    
